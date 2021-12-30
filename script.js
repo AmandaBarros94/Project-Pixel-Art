@@ -37,5 +37,13 @@ function selecionandoCorParaUso(event) {
   corSelecionada.classList.remove('selected');
   event.target.classList.add('selected');
 }
-
 paletaDeCores.addEventListener('click', selecionandoCorParaUso);
+
+function pintandoPixels(event) {
+  if (event.target.classList.contains('pixel')) {
+    const pixelSelecionado = document.querySelector('.selected');
+    const cor = pixelSelecionado.style.backgroundColor;
+    event.target.style.backgroundColor = cor;
+  }
+}
+quadro.addEventListener('click', pintandoPixels);
