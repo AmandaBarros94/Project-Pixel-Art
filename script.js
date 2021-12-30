@@ -11,4 +11,15 @@ function adicionandCores() {
 }
 adicionandCores();
 
+const quadro = document.getElementById('pixel-board');
 
+function quadroDePixels(colunas) {
+  for (let index = 0; index < colunas; index += 1) {
+    const pixel = document.createElement('div');
+    pixel.classList.add('pixel');
+    pixel.style.backgroundColor = '#FFFFFF';
+    quadro.appendChild(pixel)
+  }
+}
+
+quadroDePixels(25);
