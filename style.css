@@ -9,3 +9,8 @@ div {
   display: flex;
 }
 
+#pixel-board {
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+}
