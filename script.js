@@ -24,3 +24,8 @@ function quadroDePixels(quadrados) {
   }
 }
 quadroDePixels(25);
+
+function corSelecionada() {
+  cor1.classList.add('selected');
+}
+corSelecionada();
