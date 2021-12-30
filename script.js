@@ -25,10 +25,10 @@ function quadroDePixels(quadrados) {
 }
 quadroDePixels(25);
 
-function corSelecionada() {
+function corInicial() {
   cor1.classList.add('selected');
 }
-corSelecionada();
+corInicial();
 
 const paletaDeCores = document.getElementById('color-palette');
 
