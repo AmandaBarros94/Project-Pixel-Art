@@ -18,7 +18,7 @@ function quadroDePixels(colunas) {
     const pixel = document.createElement('div');
     pixel.classList.add('pixel');
     pixel.style.backgroundColor = '#FFFFFF';
-    quadro.appendChild(pixel)
+    quadro.appendChild(pixel);
   }
 }
 
