@@ -29,3 +29,13 @@ function corSelecionada() {
   cor1.classList.add('selected');
 }
 corSelecionada();
+
+const paletaDeCores = document.getElementById('color-palette');
+
+function selecionandoCorParaUso(event) {
+  const corSelecionada = document.querySelector('.selected');
+  corSelecionada.classList.remove('selected');
+  event.target.classList.add('selected');
+}
+
+paletaDeCores.addEventListener('click', selecionandoCorParaUso);
