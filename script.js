@@ -47,3 +47,14 @@ function pintandoPixels(event) {
   }
 }
 quadro.addEventListener('click', pintandoPixels);
+
+const button = document.getElementById('clear-board');
+
+function clearPixel() {
+  const allPixels = document.querySelectorAll('.pixel');
+  for (let ind = 0; ind < allPixels.length; ind += 1) {
+    allPixels[ind].style.backgroundColor = '#ffffff';
+  }
+}
+
+button.addEventListener('click', clearPixel);
